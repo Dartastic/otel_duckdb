@@ -41,7 +41,7 @@ Future<T> tracedDuckDB<T>({
   required Future<DuckDBCallResult<T>> Function() invoke,
   Tracer? tracer,
 }) async {
-  if (duckDBInstrumentationSuppressed()) {
+  if (duckdbInstrumentationSuppressed()) {
     final r = await invoke();
     return r.value;
   }

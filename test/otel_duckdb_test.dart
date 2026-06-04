@@ -14,8 +14,8 @@ void main() {
       expect(duckdbInstrumentationSuppressed(), isFalse);
     });
 
-    test('DuckdbResult fields default null', () {
-      const r = DuckdbResult();
+    test('DuckDBResult fields default null', () {
+      const r = DuckDBResult();
       expect(r.statusCode, isNull);
     });
   });
